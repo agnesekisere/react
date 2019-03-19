@@ -5,13 +5,17 @@
     border-radius: 50px 50px;
 }
 .UserCard-CardImg{
-    width: 70%;
+    width: 90%;
 }
-.UserCard-InfoBlock_position{
+.UserCard-CardText{
     padding-left: 20px;
-    padding-right: 20px;
 }
 .UserCard-Card_space-top-bottom{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.UserCard-InfoBlock_position{
+    display: flex;
+    align-content: center;
+    align-items: center;
 }

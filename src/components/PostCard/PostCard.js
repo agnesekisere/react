@@ -6,7 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './PostCard.css';
 
 class PostCard extends Component{
+    constructor(props) {
+        super(props);
+    }
     render(){
+       const {image, title, description} = this.props;
         return (
             <Card className="PostCard-Card PostCard-Card_space-top-bottom container">
                 <CardBody className="PostCard-CardBody row col-12">
@@ -15,10 +19,10 @@ class PostCard extends Component{
                     </div>
                     <div className="PostCard-InfoBlock PostCard-InfoBlock_position col-8">
                         <CardTitle className="PostCard-CardTitle"> 
-                            Raksta nosaukums
+                            {title}
                         </CardTitle>
                         <CardText className="PostCard-CardText">
-                            Raksta īss apraksts.
+                            {description}
                         </CardText>
                         <Button className="PostCard-Button PostCard-Button_position-right">
                                 Uzzināt vairāk

@@ -1,22 +1,22 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../logo.svg';
+import logo from '../../assets/logo.svg';
 import PostCard from '../PostCard/PostCard';
 import './PostList.css';
 
 const posts=[
     {
-        image: {logo},
+        image: (logo),
         title: "1.raksta nosaukums",
         description: "Kaut kāds raksta apraksts te noteikti kādreiz būs.",
     },
     {
-        image: {logo},
+        image: (logo),
         title: "2.raksta nosaukums",
         description: "Kaut kāds raksta apraksts te noteikti kādreiz būs.",
     },
     {
-        image: {logo},
+        image: (logo),
         title: "3.raksta nosaukums",
         description: "Kaut kāds raksta apraksts te noteikti kādreiz būs.",
     },

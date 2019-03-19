@@ -5,17 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './UserCard.css';
 
 class UserCard extends Component{
+    constructor(props){
+        super(props);
+    }
     render() {
+        const {image, name} = this.props;
         return (
         <Card className="UserCard-Card UserCard-Card_space-top-bottom container-fluid">
             <CardBody className="UserCard-CardBody row col-12">
                 <div className="UserCard-ImageBlock col-3">
-                {/*    <CardImg classname="UserCard-CardImg" top src="" alt="Card image"/> */}
+                  <CardImg className="UserCard-Image" top src={image} alt="Card image"/> 
                 <div className="UserCard-Image"></div>
                 </div>
                 <div className="UserCard-InfoBlock UserCard-InfoBlock_position col-9">
                     <CardText className="UserCard-CardText">
-                        user name
+                        {name}
                     </CardText>
                 </div>
             </CardBody>

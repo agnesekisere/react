@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/logo.svg';
 import PostList from './components/PostList/PostList';
-import UserCard from './components/UserCard/UserCard';
+import UserList from './components/UserList/UserList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -14,7 +14,7 @@ class App extends Component {
             <PostList />
           </div>
           <div className="col-3">
-            <UserCard />
+            <UserList />
           </div>
         </div>
       </div>

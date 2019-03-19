@@ -15,7 +15,7 @@ class PostCard extends Component{
             <Card className="PostCard-Card PostCard-Card_space-top-bottom container">
                 <CardBody className="PostCard-CardBody row col-12">
                     <div className="PostCard-ImageBlock col-4">
-                        <CardImg classname="PostCard-CardImg" top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image"/> 
+                        <CardImg classname="PostCard-CardImg" top src={image} alt="Card image"/> 
                     </div>
                     <div className="PostCard-InfoBlock PostCard-InfoBlock_position col-8">
                         <CardTitle className="PostCard-CardTitle"> 
